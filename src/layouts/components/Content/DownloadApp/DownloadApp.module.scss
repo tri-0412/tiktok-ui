@@ -1,0 +1,160 @@
+.wrapper {
+    box-sizing: border-box;
+}
+.backdrop {
+    box-sizing: border-box;
+    position: fixed;
+    inset: 0px;
+    background: var(--tux-colorSDSecondary);
+    transition-property: opacity;
+    transition-duration: 300ms;
+    transition-timing-function: linear;
+    opacity: 1;
+}
+.content-container {
+    box-sizing: border-box;
+    position: fixed;
+    inset: 0px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    overflow: auto;
+}
+.content-vertical-container {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-items: flex-start;
+    max-height: 100vh;
+    overflow: visible;
+}
+.content-vertical-padding {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 32px 16px;
+    max-width: 100vw;
+}
+.card-download {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    position: relative;
+    outline: 0px;
+    max-width: calc(-32px + 100vw);
+    background: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 12px;
+    border-radius: 8px;
+    overflow: hidden;
+    width: auto;
+    transition-property: transform, opacity;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+    opacity: 1;
+    transform: none;
+}
+.header-download {
+    border-bottom: 0.5px solid rgba(22, 24, 35, 0.2);
+    padding: 24px 48px 16px 24px;
+    max-width: 400px;
+}
+.close-icon {
+    position: absolute;
+    top: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+    right: 24px;
+}
+.header-text {
+    font-family: 'IBM Plex Sans', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+.content-download {
+    text-align: center;
+    max-width: 400px;
+}
+.content-download-top {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+
+    p {
+        font-family: 'IBM Plex Sans', TikTokFont, Arial, Tahoma, PingFangSC, sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        margin: 32px 0px 24px;
+        width: auto;
+        padding: 0px 24px;
+    }
+}
+.qr-download {
+    object-fit: contain;
+}
+
+.content-download-bottom {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 400px;
+    padding: 24px 24px 60px;
+
+    p {
+        font-family: 'IBM Plex Sans', Arial, Tahoma, sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+.software-download {
+    margin-top: 16px;
+    display: flex;
+    flex-flow: wrap;
+    width: 288px;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.software-download-link {
+    font-size: 4rem;
+    margin-bottom: 8px;
+    width: 138px;
+    height: 40px;
+    background-size: 138px;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 4px;
+    &:visited {
+        color: rgb(22, 24, 35);
+    }
+}
+.app-img {
+    width: 138px;
+    height: 40px;
+    background-size: 138px;
+    object-fit: cover;
+    border-radius: 4px;
+}

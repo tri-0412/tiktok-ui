@@ -1,0 +1,32 @@
+.video-container {
+    left: 262px;
+
+    width: 270px;
+    height: 485px;
+    margin: 22px 25px 40px 0;
+    position: relative;
+    justify-content: center;
+}
+.video {
+    overflow: hidden;
+    border-radius: 18px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease;
+}
+.video-container .controls {
+    object-fit: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    padding: 0 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}

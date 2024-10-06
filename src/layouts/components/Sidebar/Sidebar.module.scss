@@ -1,0 +1,51 @@
+.wrapper {
+    min-width: 270px;
+    padding: 20px 0 26px 8px;
+    margin-left: -18px;
+    position: fixed;
+    padding-right: 16px;
+    height: 100%; /* Hoặc chiều cao cụ thể */
+    overflow-y: auto; /* Cho phép cuộn theo chiều dọc */
+    box-sizing: border-box;
+
+    &:hover .scroll-sidebar {
+        overflow: visible;
+        width: 3px; /* Giữ nguyên chiều rộng của thanh cuộn */
+    }
+}
+.wrapper.fixed {
+    position: fixed;
+    /* Các style khác khi sidebar có position fixed */
+}
+
+.wrapper.relative {
+    position: relative;
+
+    /* Các style khác khi sidebar có position relative */
+}
+// Scrollbar CSS
+
+.wrapper ::-webkit-scrollbar {
+    width: 3px;
+}
+
+.wrapper ::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: rgba(12, 236, 12, 0.06);
+}
+
+.wrapper ::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0);
+}
+/* Thanh cuộn */
+.scroll-sidebar {
+    // overflow: hidden;
+    height: 2px;
+    // height: 100%; /* Hoặc chiều cao cụ thể nếu bạn biết */
+    // width: 5px; /* Chiều rộng thanh cuộn */
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    transition: opacity 0.5s;
+    opacity: 1; /* Thay đổi opacity nếu cần */
+}

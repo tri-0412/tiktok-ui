@@ -1,0 +1,46 @@
+.content-container {
+    margin-left: 270px;
+    margin: 0px auto;
+    height: 100%;
+    width: 100%;
+    min-width: 420px;
+    flex-shrink: 1;
+    display: block;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+}
+.download-app {
+    position: relative;
+    margin-bottom: 12px;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    z-index: 10;
+    padding: 0 85px;
+}
+
+.button-download-app {
+    border: 1px solid rgba(22, 24, 35, 0.12);
+    background: none rgb(255, 255, 255);
+    color: rgba(22, 24, 35, 0.75);
+    font-family: 'IBM Plex Sans', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    position: relative;
+    padding: 0px 8px;
+    min-width: 90px;
+    height: 32px;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 8px;
+    border-radius: 52px;
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    white-space: nowrap;
+    transition: transform 0.3s cubic-bezier(0.4, 0.14, 0.3, 1) 0s;
+    transform-origin: right bottom;
+    transform: none;
+}

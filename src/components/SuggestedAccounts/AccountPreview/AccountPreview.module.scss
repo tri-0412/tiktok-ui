@@ -1,0 +1,47 @@
+.wrapper {
+    inset: 0px auto auto 5px;
+    padding: 20px 15px;
+    width: 270px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.follow-btn {
+    padding: 6px 16px;
+}
+
+.body {
+    margin-top: 12px;
+    color: #161823;
+}
+.nickname {
+    font-size: 1.8rem;
+    position: relative; /* Ensure this doesn't cause margin issues */
+}
+.check {
+    font-size: 1.4rem;
+    color: #20d5ec;
+    margin-left: 4px;
+}
+.name {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.analytics {
+    font-size: 1.6rem;
+    margin-top: 10px;
+}
+.value ~ .value {
+    margin-left: 12px;
+}
+.label {
+    color: #161823bf;
+}
