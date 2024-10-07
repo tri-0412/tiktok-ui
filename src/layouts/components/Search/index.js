@@ -9,7 +9,7 @@ import classNames from 'classnames/bind';
 import { useEffect, useState, useRef } from 'react';
 import { useDebounce } from '~/hooks';
 import * as searchServices from '~/services/searchService';
-import axios from 'axios';
+
 
 const cx = classNames.bind(styles);
 function Search() {
