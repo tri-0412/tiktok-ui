@@ -13,7 +13,8 @@ function LiveContent({ children }) {
     const scrollContainerRef = useRef(null);
     const [isVisibleScroll, setIsVisibleScroll] = useState(false);
     const [isVisibleScrollWrap, setIsVisibleScrollWrap] = useState(false);
-    const [clickedButton, setClickedButton] = useState(null);
+    // const [clickedButton, setClickedButtson] = useState(null);
+
 
     //-------- Xử lí nút PrevPageIcon
     useEffect(() => {
