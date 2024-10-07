@@ -5,7 +5,6 @@ import classNames from 'classnames/bind';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { ChevronRightIcon, ChevronLeftIcon, PersonViewIcon, PrevPageIcon } from '~/components/Icons';
-import ReactPlayer from 'react-player';
 import { useRef, useState, useEffect } from 'react';
 
 const cx = classNames.bind(Styles);
